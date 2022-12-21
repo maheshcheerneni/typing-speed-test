@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>speed test</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/typing.css' %}">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="status">
+            <p>Time:<span id="timer">0s</span></p>
+            <p>mistakes:<span id="mistakes">0</span></p>
+        </div>
+
+        <div id="quote" class="quote" onmousedown="return false" onselectstart="return false">
+        </div>
+        <textarea name="" id="quote-input" class="quote-input" cols="4" placeholder="Please start here"></textarea>
+        <button id="start-test" class="start-test" onclick="startTest()">Start</button>
+        <button id="stop-test" class="stop-test" onclick="displayResult()">Stop</button>
+        <div class="result">
+            <h4>Result</h4>
+            <div class="wrapper">
+                <p>Accuracy: <span id="accuracy"></span></p>
+                <p>Speed:<span id="wpm"></span></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="{% static 'myapp/js/typing.js' %}"></script>
+</body>
+
+</html>

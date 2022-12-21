@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background-color: blue;
+}
+
+.container {
+    width: 80vmin;
+    padding: 50px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    background-color: azure;
+
+}
+
+.status {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.status span {
+    font-weight: 1000;
+}
+
+.quote {
+    text-align: justify;
+    margin: 50px 0 30px 0;
+}
+
+.quote-input {
+    resize: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.start-test {
+    float: left;
+    margin-top: 15px;
+    background-color: chartreuse;
+    color: antiquewhite;
+    padding: 10px 15px;
+    border-radius: 2px;
+}
+
+.stop-test {
+    float: right;
+    margin-top: 15px;
+    background-color: red;
+    color: antiquewhite;
+    padding: 10px 15px;
+    border-radius: 2px;
+}
+
+.result {
+    margin-top: 50px;
+    display: none;
+}
+
+.result h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper span {
+    font-weight: 1000;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
